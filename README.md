@@ -12,6 +12,8 @@ This repository provides a basic code framework to run a **PHP** and **Perl CGI*
 - **Tabulator** library for creating interactive, sortable, and filterable tables
 
 ## Directory Structure
+
+```
 .
 ├── Dockerfile
 ├── src/
@@ -22,6 +24,7 @@ This repository provides a basic code framework to run a **PHP** and **Perl CGI*
 │ ├── css/
 │ └── js/
 └── README.md
+```
 
 ## Getting Started
 
@@ -46,11 +49,17 @@ text
 ## Example Components
 
 ### PHP: `index.php`
-<?php echo "<h1>PHP + Bootstrap + Tabulator</h1>"; ?> <div id="example-table"></div> <script> var table = new Tabulator("#example-table", { data: [ {id:1, name:"Alice", age:25}, {id:2, name:"Bob", age:30} ], columns:[ {title:"ID", field:"id"}, {title:"Name", field:"name"}, {title:"Age", field:"age"} ] }); </script> ```
+
+```php
+<?php echo "<h1>PHP + Bootstrap + Tabulator</h1>"; ?> <div id="example-table"></div> <script> var table = new Tabulator("#example-table", { data: [ {id:1, name:"Alice", age:25}, {id:2, name:"Bob", age:30} ], columns:[ {title:"ID", field:"id"}, {title:"Name", field:"name"}, {title:"Age", field:"age"} ] }); </script>
+```
+
 Perl CGI: example.pl
-text
+```text
 #!/usr/bin/perl
 print "Content-type: text/html\n\n";
 print "<h1>Hello from Perl CGI!</h1>";
+```
+
 License
 This project is licensed under the MIT License.
